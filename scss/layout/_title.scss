@@ -1,0 +1,58 @@
+#entete {
+  
+    .titre {
+        .nomets {
+            font-family: "MontserratAlt1-Thin";
+            font-size: 80px;
+            margin-bottom: 0px;
+            margin: auto;
+            text-align: center;
+            background: linear-gradient(120deg,rgb(206, 179, 116) 20%,rgb(252, 223, 188) 100%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+
+        }
+    }        
+    h2 {
+        font-family: "adelia";
+        margin-left: 60%;
+        font-size: 20px;
+        color: black
+        }
+    p {
+        font-family: "MontserratAlt1-Thin";
+        width: 50%;
+        margin: auto;
+        padding-top: 100px;
+
+    }
+}
+
+.photomoi {
+    height: 70vh;
+    border-radius: 30px;
+    border: 8px black solid;
+    border-radius: 30px;
+    box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.471);
+}
+
+.accueil {
+    display: flex; 
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    align-items: center;
+}
+
+.linebottom {
+    border-top: 2px solid rgb(242, 224, 182);
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.linetop {
+    border-top: 2px solid rgb(242, 224, 182);
+    top: 10;
+}

@@ -1,0 +1,129 @@
+@import "vendors/normalize.css";
+body {
+  margin: 0px;
+  height: 95vh;
+  border: 20px rgb(39, 39, 39) solid;
+}
+
+#blobs {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: fixed;
+}
+#blobs img {
+  width: 30%;
+}
+#blobs :first-child {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#blobs :last-child {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+#entete .titre .nomets {
+  font-family: "MontserratAlt1-Thin";
+  font-size: 80px;
+  margin-bottom: 0px;
+  margin: auto;
+  text-align: center;
+  background: linear-gradient(120deg, rgb(206, 179, 116) 20%, rgb(252, 223, 188) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#entete h2 {
+  font-family: "adelia";
+  margin-left: 60%;
+  font-size: 20px;
+  color: black;
+}
+#entete p {
+  font-family: "MontserratAlt1-Thin";
+  width: 50%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.photomoi {
+  height: 70vh;
+  border-radius: 30px;
+  border: 8px black solid;
+  border-radius: 30px;
+  box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.471);
+}
+
+.accueil {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 4%;
+  align-items: center;
+}
+
+.linebottom {
+  border-top: 2px solid rgb(242, 224, 182);
+  bottom: 0;
+  margin-top: 40px;
+}
+
+.linetop {
+  border-top: 2px solid rgb(242, 224, 182);
+  top: 10;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+nav a {
+  color: rgb(103, 94, 78);
+  text-decoration: none;
+  font-family: "MontserratAlt1-Regular";
+  transition: ease-in-out 1s;
+  position: relative;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -10px;
+  left: -14px;
+  background-color: rgb(103, 94, 78);
+  transition: width 0.5s;
+}
+nav a:hover::before {
+  width: 122%;
+}
+
+@font-face {
+  font-family: "MontserratAlt1-ExtraLight";
+  src: url("/Assets/MontserratAlt1-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Light";
+  src: url("/Assets/MontserratAlt1-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Regular";
+  src: url("/Assets/MontserratAlt1-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-SemiBold";
+  src: url("/Assets/MontserratAlt1-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Thin";
+  src: url("/Assets/MontserratAlt1-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adelia";
+  src: url("/Assets/adelia.ttf") format("truetype");
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+#blobs {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    position: fixed;
+        img {
+            width : 30%;
+        }
+        :first-child {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        :last-child {
+            bottom: 0; 
+            right: 0; 
+            position: absolute;
+        }
+}
