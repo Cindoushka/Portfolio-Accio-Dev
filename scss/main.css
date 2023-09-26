@@ -62,12 +62,32 @@ body {
   font-size: 1.2vw;
 }
 
-.photomoi {
+.iphone {
+  display: flex;
+  justify-content: center;
+}
+.iphone .photomoi {
   height: 70vh;
   border-radius: 30px;
   border: 4px rgb(206, 179, 116) solid;
   border-radius: 30px;
   box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.474);
+  z-index: 0;
+}
+.iphone .montre {
+  margin-top: 4%;
+  position: absolute;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5803921569);
+  font-family: "SF-Regular";
+  z-index: 9999;
+  text-align: center;
+}
+.iphone .montre #date {
+  font-size: 1vw;
+}
+.iphone .montre #heure {
+  font-size: 4.6vw;
 }
 
 .accueil {
@@ -139,6 +159,14 @@ nav a:hover::before {
 @font-face {
   font-family: "adelia";
   src: url("/Assets/adelia.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SF-Regular";
+  src: url("/Assets/SF-Compact-Rounded-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF-Semibold";
+  src: url("/Assets/SF-Compact-Rounded-Semibold.otf") format("opentype");
 }
 .titrepage {
   font-family: "MontserratAlt1-Regular";
