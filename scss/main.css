@@ -1,8 +1,17 @@
+@charset "UTF-8";
 @import "vendors/normalize.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease-in-out 1s;
+}
+
 body {
   margin: 0px;
-  height: 95vh;
+  height: 100vh;
   border: 20px rgb(39, 39, 39) solid;
+  font-size: 16px;
 }
 
 #blobs {
@@ -27,7 +36,7 @@ body {
 
 #entete .titre .nomets {
   font-family: "MontserratAlt1-Thin";
-  font-size: 80px;
+  font-size: 6.5vw;
   margin-bottom: 0px;
   margin: auto;
   text-align: center;
@@ -39,22 +48,27 @@ body {
 #entete h2 {
   font-family: "adelia";
   margin-left: 60%;
-  font-size: 20px;
+  font-size: 1.5vw;
   color: black;
+  opacity: 0; /* Le titre est initialement transparent */
+  transform: translateX(-20px); /* Le titre est initialement décalé vers le bas */
+  animation: titreFadeIn 0.5s ease-out 0.5s forwards;
 }
 #entete p {
-  font-family: "MontserratAlt1-Thin";
+  font-family: "Montserrat";
+  font-weight: 400;
   width: 50%;
   margin: auto;
   padding-top: 100px;
+  font-size: 1.2vw;
 }
 
 .photomoi {
   height: 70vh;
   border-radius: 30px;
-  border: 8px black solid;
+  border: 4px rgb(206, 179, 116) solid;
   border-radius: 30px;
-  box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.471);
+  box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.474);
 }
 
 .accueil {
@@ -95,7 +109,7 @@ nav a::before {
   width: 0;
   height: 2px;
   bottom: -10px;
-  left: -14px;
+  left: -11%;
   background-color: rgb(103, 94, 78);
   transition: width 0.5s;
 }
@@ -126,4 +140,78 @@ nav a:hover::before {
 @font-face {
   font-family: "adelia";
   src: url("/Assets/adelia.ttf") format("truetype");
+}
+.titrepage {
+  font-family: "MontserratAlt1-Regular";
+  font-size: 1.4vw; /* Réduisez la taille de la police si nécessaire */
+  margin: 10px 0px 10px 20px; /* Réduisez la marge supérieure */
+  background: linear-gradient(120deg, #ceb374 20%, rgb(252, 223, 188) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin-left: 5%;
+  opacity: 0; /* Le titre est initialement transparent */
+  transform: translateX(20px); /* Le titre est initialement décalé vers le bas */
+  animation: titreFadeIn 0.4s ease-out 0.4s forwards;
+}
+.titrepage h1 {
+  margin-bottom: 0; /* Réduisez ou supprimez la marge supérieure */
+}
+.titrepage .icones {
+  display: flex;
+}
+.titrepage .icones img {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 6px;
+  margin-top: 2%;
+}
+
+.linedown {
+  width: 26%;
+  border: 1px solid rgb(206, 179, 116);
+  padding: 0;
+}
+
+.presentation {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 10%;
+}
+.presentation .textepres {
+  width: 60%;
+}
+.presentation p {
+  width: 100%;
+  margin: auto;
+  padding: 20px 30px 10px 30px;
+  font-family: "MontserratAlt1-Regular";
+  font-size: 1.2vw;
+  text-align: justify;
+}
+.presentation p:first-child {
+  padding-top: 8vh;
+}
+.presentation p span {
+  font-size: 1.6vw;
+}
+.presentation img {
+  height: 65vh;
+  border-radius: 30px;
+  border: 8px black solid;
+  border-radius: 30px;
+  box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.334);
+}
+
+@keyframes titreFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -2,6 +2,12 @@
 //     margin: 0px;
 //     background-color: linear-gradient(45deg, black, purple, yellow, purple, black);
 // }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 1s;
+}
 
 body {
     // background-image: linear-gradient(to bottom right, black, rgba(97, 15, 97, 0.833) 30%,rgba(97, 15, 97, 0.833) 40%, black 80%, black); /* Couleurs de dégradé */
@@ -9,8 +15,8 @@ body {
     // background-attachment: fixed; /* Fixer l'arrière-plan pour qu'il reste en place lorsque vous faites défiler la page */
     // background-repeat: no-repeat; 
     margin: 0px;
-    height: 95vh;
+    height: 100vh;
     border: 20px rgb(39, 39, 39) solid;
-
+    font-size: 16px;
     // padding: 45vh 40vw;
   }

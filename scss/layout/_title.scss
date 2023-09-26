@@ -1,9 +1,8 @@
 #entete {
-  
     .titre {
         .nomets {
             font-family: "MontserratAlt1-Thin";
-            font-size: 80px;
+            font-size: 6.5vw;
             margin-bottom: 0px;
             margin: auto;
             text-align: center;
@@ -11,20 +10,24 @@
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;  
-
         }
     }        
     h2 {
         font-family: "adelia";
         margin-left: 60%;
-        font-size: 20px;
-        color: black
+        font-size: 1.5vw;
+        color: black;
+        opacity: 0; /* Le titre est initialement transparent */
+        transform: translateX(-20px); /* Le titre est initialement décalé vers le bas */
+        animation: titreFadeIn 0.5s ease-out 0.5s forwards;
         }
     p {
-        font-family: "MontserratAlt1-Thin";
+        font-family: "Montserrat";
+        font-weight: 400;
         width: 50%;
         margin: auto;
         padding-top: 100px;
+        font-size: 1.2vw;
 
     }
 }
@@ -32,9 +35,9 @@
 .photomoi {
     height: 70vh;
     border-radius: 30px;
-    border: 8px black solid;
+    border: 4px rgb(206, 179, 116) solid;
     border-radius: 30px;
-    box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.471);
+    box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.474);
 }
 
 .accueil {
