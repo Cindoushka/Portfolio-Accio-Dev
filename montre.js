@@ -9,7 +9,7 @@ function afficherHeure() {
 }
 
 // Mettez à jour l'heure toutes les secondes (1000 millisecondes)
-setInterval(afficherHeure, 60000);
+setInterval(afficherHeure, 1000);
 
 // Appelez la fonction une fois au chargement de la page pour afficher l'heure initiale
 afficherHeure();
