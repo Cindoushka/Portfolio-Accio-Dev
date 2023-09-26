@@ -1,18 +1,18 @@
 .titrepage {
     font-family: "MontserratAlt1-Regular";
-    font-size: 1.4vw; /* Réduisez la taille de la police si nécessaire */
-    margin: 10px 0px 10px 20px; /* Réduisez la marge supérieure */
+    font-size: 1.4vw;
+    margin: 10px 0px 10px 20px; 
     background: linear-gradient(120deg,#ceb374 20%,rgb(252, 223, 188) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     padding: 0;
     margin-left: 5%;
-    opacity: 0; /* Le titre est initialement transparent */
-    transform: translateX(20px); /* Le titre est initialement décalé vers le bas */
+    opacity: 0; 
+    transform: translateX(20px); 
     animation: titreFadeIn 0.4s ease-out 0.4s forwards;
     h1 {
-        margin-bottom: 0; /* Réduisez ou supprimez la marge supérieure */
+        margin-bottom: 0; 
     }
     .icones {
         display: flex;
@@ -47,7 +47,7 @@
         font-size: 1.2vw;
         text-align: justify;
         &:first-child {
-            padding-top: 8vh;
+            padding-top: 8.5vh;
         }
         span {
             font-size: 1.6vw;

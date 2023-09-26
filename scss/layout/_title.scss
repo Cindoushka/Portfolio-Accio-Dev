@@ -17,8 +17,8 @@
         margin-left: 60%;
         font-size: 1.5vw;
         color: black;
-        opacity: 0; /* Le titre est initialement transparent */
-        transform: translateX(-20px); /* Le titre est initialement décalé vers le bas */
+        opacity: 0; 
+        transform: translateX(-20px); 
         animation: titreFadeIn 0.5s ease-out 0.5s forwards;
         }
     p {
