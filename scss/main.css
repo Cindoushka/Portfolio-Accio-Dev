@@ -199,7 +199,7 @@ nav a:hover::before {
 .presentation img {
   height: 65vh;
   border-radius: 30px;
-  border: 8px black solid;
+  border: 4px rgb(206, 179, 116) solid;
   border-radius: 30px;
   box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.334);
 }
