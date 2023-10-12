@@ -22,6 +22,9 @@ nav {
     a:hover::before {
         width: 122%;
     }
+    .isactive::before {
+        width: 122%;
+    }
     img {
         width: 24px;
     }

@@ -1,0 +1,50 @@
+.iphone {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .photomoi {
+        height: 70vh;
+        border-radius: 30px;
+        border: 5px rgb(206, 179, 116) solid;
+        border-radius: 30px;
+        box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.474);
+        z-index: 0;
+    }
+    .montre {
+        display: flex;
+        position: absolute;
+        font-weight: bold;
+        color: #ffffff94;
+        font-family: "SF-Regular";
+        z-index: 9999;
+        text-align: center;
+        flex-direction: column;
+        top: 50px;
+        user-select: none;
+        #date {
+            font-size: 1.1vw;
+        }
+
+        #heure {
+            font-size: 4.6vw;
+        }
+    }
+    .tabbar {
+        display: flex;
+        gap: 2vh;
+        background-color: rgba(203, 203, 203, 0.571);
+        border-radius: 16px;
+        position: absolute;
+        bottom: 20px;
+        padding: 12px 12px 10px 12px;
+        width: 90%;
+        height: 7.5vh;
+        align-items: center;
+        img {
+            width: 90%;
+        }
+        a:hover, .isactive {
+            -webkit-filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.554));
+        }
+    }
+}
