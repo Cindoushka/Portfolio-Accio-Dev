@@ -1,12 +1,13 @@
 #entete {
     .titre {
         .nomets {
-            font-family: "MontserratAlt1-Thin";
-            font-size: 6.5vw;
+            font-family: "LEIXO-DEMO";
+            font-weight: 200;
+            font-size: 9vw;
             margin-bottom: 0px;
             margin: auto;
             text-align: center;
-            background: linear-gradient(120deg, #ceb374 20%, #fcdfbc 100%);
+            background: linear-gradient(120deg, #ad9551 40%, #fcdfbc 100%);
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -28,9 +29,11 @@
         font-family: "SF-Regular";
         width: 100%;
         margin: auto;
-        padding-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 10vh;
         font-size: 1.2vw;
         text-align: center;
+        color: white;
 
     }
 }
@@ -43,8 +46,9 @@
     justify-content: space-around;
     width: 80%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 12%;
     align-items: center;
+    // flex-direction: column;
 }
 
 .linebottom {

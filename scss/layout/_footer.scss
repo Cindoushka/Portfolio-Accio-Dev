@@ -1,0 +1,18 @@
+footer {
+    display: flex; 
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.804);
+    padding: 8px 20px;
+    bottom: 0px;
+    margin-top: 3%;
+        a {
+            text-decoration: none;
+            font-family: "SF-Regular";
+            color: #ad9551;
+            font-size: 1.1vw;
+        }
+        .liens {
+            display: flex;
+            gap: 40px;
+        }
+}

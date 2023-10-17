@@ -8,9 +8,7 @@
 
 body {
   margin: 0px;
-  height: 100vh;
-  border: 20px rgb(39, 39, 39) solid;
-  font-size: 16px;
+  background: black;
 }
 
 #blobs {
@@ -34,12 +32,13 @@ body {
 }
 
 #entete .titre .nomets {
-  font-family: "MontserratAlt1-Thin";
-  font-size: 6.5vw;
+  font-family: "LEIXO-DEMO";
+  font-weight: 200;
+  font-size: 9vw;
   margin-bottom: 0px;
   margin: auto;
   text-align: center;
-  background: linear-gradient(120deg, #ceb374 20%, #fcdfbc 100%);
+  background: linear-gradient(120deg, #ad9551 40%, #fcdfbc 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,9 +57,11 @@ body {
   font-family: "SF-Regular";
   width: 100%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 10vh;
   font-size: 1.2vw;
   text-align: center;
+  color: white;
 }
 
 .accueil {
@@ -68,7 +69,7 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 12%;
   align-items: center;
 }
 
@@ -87,11 +88,18 @@ nav {
   display: flex;
   padding: 20px;
   justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-size: 1.2vw;
+  position: fixed;
+  z-index: 999;
+  background-color: black;
+  top: 0;
 }
 nav a {
-  color: #675e4e;
+  color: white;
   text-decoration: none;
-  font-family: "MontserratAlt1-Regular";
+  font-family: "SF-Regular";
   transition: ease-in-out 1s;
   position: relative;
 }
@@ -99,10 +107,10 @@ nav a::before {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
-  bottom: -10px;
+  height: 1px;
+  bottom: -12px;
   left: -11%;
-  background-color: rgb(103, 94, 78);
+  background-color: white;
   transition: width 0.5s;
 }
 nav a:hover::before {
@@ -112,7 +120,13 @@ nav .isactive::before {
   width: 122%;
 }
 nav img {
-  width: 24px;
+  width: 8vh;
+}
+nav span {
+  content: "";
+  width: 20%;
+  background-color: white;
+  height: 1px;
 }
 
 .iphone {
@@ -123,9 +137,9 @@ nav img {
 .iphone .photomoi {
   height: 70vh;
   border-radius: 30px;
-  border: 5px rgb(206, 179, 116) solid;
+  border: 5px #ceb374 solid;
   border-radius: 30px;
-  box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.474);
+  box-shadow: 10px 6px 6px rgba(206, 179, 116, 0.4745098039);
   z-index: 0;
 }
 .iphone .montre {
@@ -167,6 +181,25 @@ nav img {
   -webkit-filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.554));
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(34, 34, 34, 0.804);
+  padding: 8px 20px;
+  bottom: 0px;
+  margin-top: 3%;
+}
+footer a {
+  text-decoration: none;
+  font-family: "SF-Regular";
+  color: #ad9551;
+  font-size: 1.1vw;
+}
+footer .liens {
+  display: flex;
+  gap: 40px;
+}
+
 @font-face {
   font-family: "MontserratAlt1-ExtraLight";
   src: url("/Assets/MontserratAlt1-ExtraLight.ttf") format("truetype");
@@ -198,6 +231,14 @@ nav img {
 @font-face {
   font-family: "SF-Semibold";
   src: url("/Assets/SF-Compact-Rounded-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "LEIXO-DEMO";
+  src: url("/Assets/LEIXO-DEMO.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roundor";
+  src: url("/Assets/RoundorNonCommercial.otf") format("opentype");
 }
 .titrepage {
   font-family: "MontserratAlt1-Regular";
