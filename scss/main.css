@@ -1,17 +1,61 @@
 @import "vendors/normalize.css";
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  transition: ease-in-out 1s;
+}
+
+body, html {
+  margin: 0px;
+  height: 100%;
 }
 
 body {
-  margin: 0px;
   background-image: linear-gradient(135deg, #f1e9e2 0%, #b79f8b 100%);
-  height: 82vh;
 }
 
+@font-face {
+  font-family: "MontserratAlt1-ExtraLight";
+  src: url("/Assets/MontserratAlt1-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Light";
+  src: url("/Assets/MontserratAlt1-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Regular";
+  src: url("/Assets/MontserratAlt1-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-SemiBold";
+  src: url("/Assets/MontserratAlt1-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MontserratAlt1-Thin";
+  src: url("/Assets/MontserratAlt1-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adelia";
+  src: url("/Assets/adelia.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SF-Regular";
+  src: url("/Assets/SF-Compact-Rounded-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF-Semibold";
+  src: url("/Assets/SF-Compact-Rounded-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "LEIXO-DEMO";
+  src: url("/Assets/LEIXO-DEMO.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roundor";
+  src: url("/Assets/RoundorNonCommercial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Qeilab";
+  src: url("/Assets/Qeilab.otf") format("opentype");
+}
 #blobs {
   width: 100%;
   height: 100vh;
@@ -33,36 +77,29 @@ body {
 }
 
 #entete .titre .nomets {
-  font-family: "Didot";
+  font-family: "Qeilab";
   font-weight: 200;
   font-size: 8vw;
   margin-bottom: 0px;
   margin: auto;
   text-align: center;
   color: #ad9661;
+  letter-spacing: 1vh;
 }
 #entete .titre .nomets span {
   color: black;
 }
-#entete h2 {
-  font-family: "adelia";
-  margin-left: 60%;
-  width: 50%;
-  font-size: 1.5vw;
-  color: rgba(0, 0, 0, 0.856);
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: titreFadeIn 0.5s ease-out 0.5s forwards;
-}
 #entete p {
-  font-family: "SF-Regular";
+  font-family: "Didot";
   width: 70%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: center;
   color: rgba(0, 0, 0, 0.757);
+  border-left: 6px rgba(173, 149, 81, 0.4156862745) solid;
+  border-top: 2px rgba(173, 149, 81, 0.4156862745) solid;
 }
 
 .accueil {
@@ -70,11 +107,12 @@ body {
   justify-content: space-around;
   width: 80%;
   margin: auto;
-  margin-top: 12%;
+  padding-top: 10%;
   align-items: center;
 }
 .accueil img {
   width: 60vh;
+  -webkit-filter: drop-shadow(-20px 0px 0px rgba(173, 148, 81, 0.4156862745));
 }
 
 .linebottom {
@@ -102,7 +140,7 @@ nav {
 nav a {
   color: black;
   text-decoration: none;
-  font-family: "SF-Regular";
+  font-family: "Didot";
   transition: ease-in-out 1s;
   position: relative;
 }
@@ -262,46 +300,6 @@ footer .liens {
   color: #808080;
 }
 
-@font-face {
-  font-family: "MontserratAlt1-ExtraLight";
-  src: url("/Assets/MontserratAlt1-ExtraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MontserratAlt1-Light";
-  src: url("/Assets/MontserratAlt1-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MontserratAlt1-Regular";
-  src: url("/Assets/MontserratAlt1-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MontserratAlt1-SemiBold";
-  src: url("/Assets/MontserratAlt1-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MontserratAlt1-Thin";
-  src: url("/Assets/MontserratAlt1-Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: "adelia";
-  src: url("/Assets/adelia.ttf") format("truetype");
-}
-@font-face {
-  font-family: "SF-Regular";
-  src: url("/Assets/SF-Compact-Rounded-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "SF-Semibold";
-  src: url("/Assets/SF-Compact-Rounded-Semibold.otf") format("opentype");
-}
-@font-face {
-  font-family: "LEIXO-DEMO";
-  src: url("/Assets/LEIXO-DEMO.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roundor";
-  src: url("/Assets/RoundorNonCommercial.otf") format("opentype");
-}
 .titrepage {
   font-family: "MontserratAlt1-Regular";
   font-size: 1.4vw;
