@@ -7,10 +7,9 @@ nav {
     font-size: 1.2vw;
     position: fixed;
     z-index: 999;
-    background-color: black;
     top: 0;
     a {
-        color: white;
+        color: black;
         text-decoration: none;
         font-family: "SF-Regular";
         transition: ease-in-out 1s;
@@ -23,7 +22,7 @@ nav {
         height: 1px; 
         bottom: -12px; 
         left: -11%; 
-        background-color: white; 
+        background-color: black; 
         transition: width 0.5s; 
     }
     a:hover::before {
@@ -38,7 +37,7 @@ nav {
     span {
         content: "";
         width: 20%;
-        background-color: white;
+        background-color: black;
         height: 1px;
     }
 }
