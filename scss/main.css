@@ -249,18 +249,19 @@ footer .liens {
   right: 16px;
   border-radius: 0px 0px 12px 12px;
   box-shadow: 4px 4px 4px rgba(213, 203, 174, 0.0823529412);
-  background-color: rgba(205, 205, 205, 0.196);
+  background-color: rgba(173, 150, 97, 0.2078431373);
   height: 7vh;
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 #burger .push {
   cursor: pointer;
   position: fixed;
 }
 #burger .push img {
-  width: 75%;
-  padding: 12px;
+  width: 4.5vh;
+  padding-bottom: 0.8vh;
 }
 
 #burger:hover ul {
@@ -270,7 +271,7 @@ footer .liens {
 
 #burger ul {
   display: none;
-  background-color: rgba(205, 205, 205, 0.196);
+  background-color: rgba(173, 150, 97, 0.2078431373);
   width: 100%;
   padding: 0;
   margin-left: 0;
@@ -283,7 +284,7 @@ footer .liens {
   margin: auto;
   width: 100%;
   text-decoration: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 12px;
 }
 #burger ul li img {
